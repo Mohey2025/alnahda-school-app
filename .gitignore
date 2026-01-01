@@ -1,34 +1,54 @@
-# Gradle files
+# Android
 .gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
+/local.properties
+**/build/
+/captures/
 .externalNativeBuild/
 .cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
 *.iml
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+/*.keystore
 
-# Keystore files
-*.jks
-*.keystore
+# Ignore Firebase config file that may contain keys
+android/app/firebase_config.json
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Kotlin/IntelliJ
+*.kotlin_module
 
-# Android Profiling
-*.hprof
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+
+# Env files
+.env
+.env.*
+
+# web specific possible local config
+web/src/firebaseConfig.js
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary
+tmp/
+temp/
+
+# Coverage
+coverage/
+
+# VS Code
+.vscode/
